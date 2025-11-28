@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Properties – Nezer World Ltd</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+.navbar {
+    background: #4a1b7b;
+}
+.nav-link, .navbar-brand {
+    color: #fff !important;
+    font-weight: 600;
+}
+.navbar-brand img {
+            height: 65px;
+        }
+.hero {
+    background: linear-gradient(rgba(74,27,123,0.7), rgba(74,27,123,0.7)), url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    color: white;
+    text-align: center;
+}
+.property-card img {
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.property-card {
+    transition: 0.3s;
+}
+.property-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.price-tag {
+    background: #eb53c7;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    color: white;
+}
+ footer {
+            background: #4b1b8c;
+            color: #ffffffcc;
+            padding: 40px 0;
+            margin-top: 70px;
+        }
+
+        footer a {
+            color: #ff79c6;
+            text-decoration: none;
+        }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg shadow">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+            <img src="/assets/images/logo.png" alt="Nezer World Logo">
+        </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="properties.html">Properties</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="invest.html">Invest</a></li>
+        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1 class="fw-bold">Our Property Listings</h1>
+  <p class="lead">Carefully selected estates and luxury homes for modern living</p>
+</section>
+
+<!-- PROPERTY GRID -->
+<div class="container py-5">
+  <h2 class="fw-bold mb-4 text-center">Featured Properties</h2>
+
+  <div class="row g-4">
+
+    <!-- Property 1 -->
+    <div class="col-md-4">
+      <div class="property-card p-2 border rounded">
+        <img src="/assets/images/project3 (5).jpg" class="w-100">
+        <div class="p-3">
+          <h5 class="fw-bold">Gated Luxury Duplex – Abuja</h5>
+          <div class="price-tag mb-2">$220,000</div>
+          <p>4 Bedroom fully serviced duplex located in one of the safest gated estates in Abuja.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 2 -->
+    <div class="col-md-4">
+      <div class="property-card p-2 border rounded">
+        <img src="/assets/images/project3 (6).jpg" class="w-100">
+        <div class="p-3">
+          <h5 class="fw-bold">Modern Smart Home – Lagos</h5>
+          <div class="price-tag mb-2">$350,000</div>
+          <p>State-of-the-art smart home with automated lighting, security, and serene views.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 3 -->
+    <div class="col-md-4">
+      <div class="property-card p-2 border rounded">
+        <img src="/assets/images/project3 (7).jpg" class="w-100">
+        <div class="p-3">
+          <h5 class="fw-bold">Serviced Apartments – Port Harcourt</h5>
+          <div class="price-tag mb-2">$180,000</div>
+          <p>Fully furnished modern apartments suitable for rental income investment.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+ <!-- FOOTER -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 Nezer World Ltd. All Rights Reserved.</p>
+            <p>Email: <a href="mailto:nezerworld24@gmail.com">nezerworld24@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

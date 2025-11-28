@@ -1,0 +1,174 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+
+:root{
+  --gold:#D4AF37;
+  --green:#003C2F;
+  --pink:#F7C7D3;
+  --white:#FFFFFF;
+  --gray:#F5F5F5;
+  --dark:#1A1A1A;
+}
+
+body{
+  background:var(--white);
+  color:var(--dark);
+  line-height:1.8;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:15px 50px;
+  background:var(--white);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:2px solid var(--pink);
+  z-index:1000;
+}
+
+header img.logo{
+  height:60px;
+}
+
+nav ul{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+nav ul li a{
+  text-decoration:none;
+  font-weight:600;
+  color:var(--green);
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:var(--gold);
+}
+
+/* MOBILE MENU */
+.menu-btn{
+  display:none;
+  font-size:30px;
+  color:var(--green);
+}
+
+@media(max-width:900px){
+  nav{
+    display:none;
+    position:absolute;
+    top:90px;
+    right:0;
+    width:100%;
+    padding:20px;
+    background:var(--white);
+    border-top:2px solid var(--pink);
+  }
+  nav ul{
+    flex-direction:column;
+    text-align:center;
+  }
+  .menu-btn{
+    display:block;
+  }
+}
+
+/* HERO */
+.hero{
+  padding:160px 50px 120px;
+  text-align:left;
+  background:var(--gray);
+}
+
+.hero h1{
+  font-size:48px;
+  color:var(--green);
+}
+
+.hero p{
+  margin-top:15px;
+  font-size:18px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  background:var(--pink);
+  color:var(--dark);
+  padding:12px 25px;
+  font-weight:600;
+  border-radius:6px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:var(--gold);
+  color:var(--white);
+}
+
+/* CARDS */
+.card{
+  background:var(--white);
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+@media(max-width:900px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+
+/* CONTACT FORM */
+form{
+  background:var(--white);
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,0.1);
+}
+
+form input, form textarea{
+  width:100%;
+  padding:15px;
+  margin-bottom:20px;
+  border:1px solid #ccc;
+  border-radius:8px;
+}
+
+form button{
+  background:var(--pink);
+  border:none;
+  padding:15px 25px;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+form button:hover{
+  background:var(--gold);
+  color:white;
+}
+
